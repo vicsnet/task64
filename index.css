@@ -76,7 +76,7 @@ main {
 .skillset {
   padding-top: 2rem;
 }
- h2 {
+ h3, h2 {
   font-family: "GT Zirkon";
   font-size: 3rem;
   font-weight: 400;
@@ -97,6 +97,15 @@ main {
 .past_project{
     
 }
-.past_project h2{
-
+.project_details{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.pro img{
+    width: 400px;
+}
+.pro p{
+    
 }

@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincent Profile</title>
     <link rel="stylesheet" href="./index.css">
+    <script>
+       const clicked=()=>{
+            var element = document.getElementById("scrollto");
+            element.scrollIntoView();
+        }
+       const clicked1=()=>{
+            var element = document.getElementById("scrollto1");
+            element.scrollIntoView();
+        }
+       const clicked2=()=>{
+            var element = document.getElementById("scrollto2");
+            element.scrollIntoView();
+        }
+       const clicked3=()=>{
+            var element = document.getElementById("scrollto3");
+            element.scrollIntoView();
+        }
+       const clicked4=()=>{
+            var element = document.getElementById("scrollto4");
+            element.scrollIntoView();
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -13,15 +35,15 @@
         <Header>
             <h1 class="">Adesanmi Vincent</h1>
     <ul>
-        <li class="">Introduction</li>
-    <li class="">Skillset</li>
-    <li class="">Past Project</li>
-    <li class="">Lives Imppacted</li>
-    <li class="">Contact</li>
+        <li onclick="clicked()">Introduction</li>
+    <li onclick="clicked1()">Skillset</li>
+    <li onclick="clicked2()">Past Project</li>
+    <li onclick="clicked3()">Lives Imppacted</li>
+    <li onclick="clicked4()">Contact</li>
     </ul>
         </Header>
         <main>
-    <div class="introduction">
+    <div class="introduction" id="scrollto">
         <div class="image">
             <img src="./images/vincepp.jpg" alt="">
         </div>
@@ -29,10 +51,10 @@
         <h2>Hi, I'm Adesanmi Vincent</h2>
         <p>I'm a Web & Software developer from Lagos, Nigeria.</p>
         <p>I help designers, agencies and businesses bring there idea's to life</p>
-        <p>Got any questions? <a href="#">Contact me</a></p>
+        <p>Got any questions? <a onclick="clicked4()">Contact me</a></p>
     </div>
     </div>
-    <div class="skillset">
+    <div class="skillset" id="scrollto1">
     <h2>My Skillset</h2>
     <ul>
         <li class="">Html</li>
@@ -45,30 +67,38 @@
     </ul>
     </div>
     
-    <div class="past_project">
+    <div class="past_project" id="scrollto2">
         <h2>Past Project</h2>
         <div class="project_details">
             <div class="pro">
                 
-                <img src="./images/netflix.PNG" alt="">
+                <img src="./images/mernblog.PNG" alt="">
                 <h3>Blog</h3>
                 <p>This is a MERN stack application with react, redux and node</p>
+                <button>
+                    <a href="https://github.com/vicsnet/MERN_BLOG_APP">Check Code</a>
+                </button>
                
             </div>
             <div class="pro">
                 <img src="./images/netflix.PNG" alt="">
                 <h3>Netflix Clone</h3>
                 <p>this is a full stack movie application with React and firebase</p>
+                <button>
+                    <a href="https://github.com/vicsnet/netflix">Check Code</a>
+                </button>
             </div>
             <div class="pro">
-                <img src="./images/netflix.PNG" alt="">
+                <img src="./images/tesla.PNG" alt="">
                 <h3>Tesla Clone</h3>
                 <p>This is a clone Tesla App with React</p>
-               
+               <button>
+                <a href="https://github.com/vicsnet/tesla-clone">Check Code</a>
+               </button>
             </div>
         </div>
     </div>
-    <div class="lives_impacted">
+    <div class="lives_impacted" id="scrollto3">
         <h2>Lives Impacted</h2>
         <h4>2019-2020: <span>Educator</span></h4>
         <p>I help StemZone(zionIT) to introduce kids to basic web development</p>
@@ -76,7 +106,8 @@
         <p>I assist sqooqs to introduce kids to basic web development</p>
     </div>
     
-    <div class="contact">
+    <div class="contact" id="scrollto4">
+        <h2>Contact</h2>
         <ul>
             <li><a href="">Twitter</a></li>
             <li><a href="">GitHub</a></li>
@@ -86,8 +117,8 @@
     </div>
         </main>
         <footer>
-    </div>
-<p>copyright 2022</p>
+
+<p>&copy; copyright 2022</p>
     </footer>
 </body>
 </html>

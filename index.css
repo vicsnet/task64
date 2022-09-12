@@ -28,6 +28,7 @@ Header {
   justify-content: space-between;
   background: #ffffff;
   margin: 1rem;
+  font-family: "GT Zirkon";
 }
 
 Header ul {
@@ -58,7 +59,9 @@ main {
   width: 200px;
   border-radius: 50%;
 }
-.intro-details {
+.intro-details p a {
+  cursor: pointer;
+  color: red;
 }
 .intro-details h2 {
   font-family: "GT Zirkon";
@@ -76,7 +79,8 @@ main {
 .skillset {
   padding-top: 2rem;
 }
- h3, h2 {
+h3,
+h2 {
   font-family: "GT Zirkon";
   font-size: 3rem;
   font-weight: 400;
@@ -86,7 +90,6 @@ main {
   /* list-style: none; */
   display: flex;
   justify-content: center;
-  
 }
 .skillset ul li {
   margin: 2rem;
@@ -94,18 +97,78 @@ main {
   font-family: "GT Zirkon";
   font-weight: 400;
 }
-.past_project{
-    
+.past_project {
 }
-.project_details{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 1rem;
+.project_details {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
-.pro img{
-    width: 400px;
+.pro img {
+  width: 400px;
 }
-.pro p{
-    
+.pro p {
+  font-family: "GT Zirkon";
+  text-align: center;
+  text-transform: capitalize;
+  width: 400px;
+}
+.pro button {
+  width: 100px;
+  height: 30px;
+  background-color: #ffe8dc;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  border-radius: 4px;
+  margin-top: 0.8rem;
+}
+.pro button a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.lives_impacted {
+  margin-top: 4rem;
+  margin-left: 5rem;
+}
+.lives_impacted h4 {
+  font-family: "GT Zirkon";
+  font-size: 3rem;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+}
+.lives_impacted p {
+  font-family: "GT Zirkon";
+  font-size: 2rem;
+  padding-bottom: 1.2rem;
+}
+.contact {
+  font-family: "GT Zirkon";
+  font-size: 2rem;
+  margin-left: 5rem;
+}
+
+.contact h2 {
+  text-align: left;
+}
+.contact ul {
+  list-style: none;
+}
+.contact ul li {
+  margin: 1.2rem;
+}
+.contact ul li a {
+  /* text-decoration: none; */
+  cursor: pointer;
+  color: black;
+}
+footer {
+  font-family: "GT Zirkon";
+  text-align: center;
 }
